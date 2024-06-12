@@ -66,8 +66,6 @@ const props = defineProps({
   },
 })
 
-const { t } = useI18n()
-
 const state = reactive({
   labelRotation: 0,
   edgeOffset: 0,
@@ -81,7 +79,9 @@ const siblingsAmount = computed(() => {
 const label = computed(() => {
   const label = props.data.label
   const distance = Math.abs(props.sourceX - props.targetX) + Math.abs(props.sourceY - props.targetY)
-  const availableChars = Math.sqrt(distance)
+  const minimumLength = 5
+  
+  const availableChars = Math.sqrt(distance) + minimumLength
   return `${label.slice(0, availableChars)}${label.length > availableChars ? '...' : ''})`
 })
 
