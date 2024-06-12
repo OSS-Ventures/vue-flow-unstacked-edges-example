@@ -1,6 +1,8 @@
 # Vue Flow 🌊
 
-__Check out [VueFlow's Github](https://github.com/bcakmakoglu/vue-flow/blob/master/README.md).__
+__Created by [Lockev](https://github.com/Lockev)__
+
+__Check out [VueFlow's Github](https://github.com/bcakmakoglu/vue-flow/).__
 
 [![Vue flow](vue-flow.gif)](https://vueflow.dev/)
 ![top-language](https://img.shields.io/github/languages/top/bcakmakoglu/vue-flow)
